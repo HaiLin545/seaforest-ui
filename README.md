@@ -1,8 +1,11 @@
 # 🌊🌲 SeaForest Design System
 
+
 > 海松青、晨雾蓝、珊瑚橙 — 一套为现代 Web / App / 桌面端打造的、有呼吸感的设计系统。
 
 SeaForest 的灵感来自**清晨海岸边的松林**：海雾带着微咸，阳光透过针叶洒下青绿与金色的光斑。它融合了**海洋的开阔**与**森林的静谧**，既简约大气，又活泼现代。
+
+![SeaForest Design System Overview](./overview.png)
 
 ---
 
