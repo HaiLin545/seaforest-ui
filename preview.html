@@ -298,12 +298,28 @@
     .nav-icon { width: 16px; height: 16px; flex: none; }
 
     .main { padding: var(--space-8) var(--space-10); min-width: 0; }
-    @media (max-width: 768px) { .main { padding: var(--space-6) var(--space-4); } }
-
+    
     .topbar {
       display: flex; align-items: center; justify-content: space-between;
       margin-bottom: var(--space-10);
       gap: var(--space-4);
+    }
+    
+    @media (max-width: 768px) { 
+      .main { padding: var(--space-6) var(--space-4); } 
+      .topbar {
+        flex-direction: column-reverse;
+        align-items: stretch;
+        margin-bottom: var(--space-6);
+        gap: var(--space-4);
+      }
+      .topbar > .row {
+        justify-content: space-between;
+        width: 100%;
+      }
+      .topbar .input-field {
+        width: 100% !important;
+      }
     }
 
     /* =========================================
@@ -402,7 +418,8 @@
     .input-field.is-error { border-color: var(--color-danger); }
     .input-field.is-error:focus-within { box-shadow: var(--shadow-glow-coral); }
     .input-field input {
-      flex: 1; border: none; outline: none; background: transparent;
+      flex: 1; min-width: 0; outline: none; background: transparent;
+      border: none; -webkit-appearance: none; border-radius: 0;
       font-family: inherit; font-size: 14px; color: var(--color-text);
       height: 100%;
     }
@@ -504,6 +521,9 @@
     @media (max-width: 960px) {
       .grid-cols-10, .grid-cols-6, .grid-cols-5, .grid-cols-4 { grid-template-columns: repeat(2, 1fr); }
       .grid-cols-3 { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 768px) {
+      .grid-cols-10, .grid-cols-6, .grid-cols-5, .grid-cols-4, .grid-cols-2 { grid-template-columns: 1fr; }
     }
 
     .row { display: flex; flex-wrap: wrap; gap: var(--space-3); align-items: center; }
@@ -617,12 +637,12 @@
     }
     .theme-toggle button {
       border: none; background: transparent;
-      padding: 6px 14px;
+      height: 32px; padding: 0 16px;
       border-radius: var(--radius-full);
-      font-size: 12px; font-weight: 500;
+      font-size: 13px; font-weight: 500;
       color: var(--color-text-secondary);
       cursor: pointer;
-      display: inline-flex; align-items: center; gap: 6px;
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
       transition: all var(--duration-fast) var(--ease-standard);
       font-family: inherit;
     }
