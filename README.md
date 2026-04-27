@@ -5,7 +5,8 @@
 
 SeaForest 的灵感来自**清晨海岸边的松林**：海雾带着微咸，阳光透过针叶洒下青绿与金色的光斑。它融合了**海洋的开阔**与**森林的静谧**，既简约大气，又活泼现代。
 
-![SeaForest Design System Overview](./overview.png)
+[![SeaForest Design System Overview](./overview.png)](https://hailin545.github.io/seaforest-ui/preview.html)
+*👆 点击图片进入在线预览 (Live Preview)*
 
 ---
 
@@ -21,38 +22,9 @@ SeaForest 的灵感来自**清晨海岸边的松林**：海雾带着微咸，阳
 
 ---
 
-## 📁 目录结构
+## � 阅读顺序建议
 
-```
-forest-design-system/
-├── design.md      # 设计规范全文（哲学、色彩、排版、组件、动效、Token…）
-├── preview.html   # 单文件可交互预览（浅/深色主题、锚点导航、组件示例）
-└── README.md
-```
-
----
-
-## 🚀 快速预览
-
-直接在浏览器打开 `preview.html` 即可：
-
-```bash
-open preview.html          # macOS
-xdg-open preview.html      # Linux
-start preview.html         # Windows
-```
-
-或用任意静态服务器：
-
-```bash
-npx serve .
-```
-
----
-
-## 📖 阅读顺序建议
-
-1. 打开 [`preview.html`](./preview.html) 感受整体氛围与组件形态
+1. 打开 [在线预览 (Live Preview)](https://hailin545.github.io/seaforest-ui/preview.html) 感受整体氛围与组件形态
 2. 翻阅 [`design.md`](./design.md) 查阅具体规范与 Token 定义
 3. 复制所需的 CSS 变量到你自己的项目中使用
 
